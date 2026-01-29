@@ -41,7 +41,7 @@ const posLlave = getPosLibre(currentMap);
 const llave = new Llave(posLlave.x, posLlave.y);
 
 // --- GESTIÓN DE AUDIO ---
-const musicaFondo = new Audio('assets/ambiente.mp3');
+const musicaFondo = new Audio('assets/music.mp3');
 musicaFondo.loop = true;
 musicaFondo.volume = 0.2;
 
@@ -169,5 +169,6 @@ function loop() {
     render();
     requestAnimationFrame(loop);
 }
+
 
 loop();
